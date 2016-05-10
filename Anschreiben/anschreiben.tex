@@ -1,0 +1,74 @@
+% this only compiles with lualtex
+
+\documentclass[
+  fontsize=11pt,
+  paper=a4,
+  parskip=half,
+  enlargefirstpage=on,    % More space on first page
+  fromalign=right,        % PLacement of name in letter head
+  fromphone=on,           % Turn on phone number of sender
+  fromrule=aftername,     % Rule after sender name in letter head
+  addrfield=on,           % Adress field for envelope with window
+  backaddress=on,         % Sender address in this window
+  subject=beforeopening,  % Placement of subject
+  locfield=narrow,        % Additional field for sender
+  foldmarks=on,           % Print foldmarks
+  fromemail=on
+]{scrlttr2}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\usepackage{microtype}
+\usepackage[osf,sc]{mathpazo}
+\usepackage{microtype}
+\linespread{1.05}
+
+\usepackage{xcolor}
+\usepackage{summer}
+
+\usepackage{textcase}
+\newcommand{\spacedallcaps}[1]{\textls[160]{\MakeTextUppercase{#1}}}%
+
+
+\addtokomafont{backaddress}{\normalfont}
+\addtokomafont{fromname}{\color{blaze}}
+\addtokomafont{subject}{\color{blaze}}
+
+\LoadLetterOption{DIN}
+\setkomavar{fromname}{\spacedallcaps{Julian Müller}}
+\setkomavar{fromaddress}{Josef-Gottwald-Str.1\\77654 Offenburg}
+\setkomavar{fromphone}{+49 0000 0\,00\,00\,00}
+\setkomavar{fromemail}{jul.mue@hotmail.de}
+\setkomavar{backaddressseparator}{\enspace\textperiodcentered\enspace}
+\setkomavar{signature}{\includegraphics[width=4.5cm]{sig}\\\vspace{-3em}{(Julian Müller)}}
+\setkomavar{place}{Offenburg}
+\setkomavar{date}{\today}
+\setkomavar{enclseparator}{: }
+
+% add metadata
+
+\pdfinfo{
+  /Title (Anschreiben Bewerbung Julian Müller)
+  /Creator (TeX)
+  /Producer (pdfTeX 1.40.0)
+  /Author (Julian Müller)
+  /Subject (Betreff)
+  /Keywords (Logik, Informatik, Maschinenbau)
+}
+
+\begin{document}
+  \begin{letter}{Empfängername\\Empfängerstraße\\00000 EmpfängerOrt}
+    \setkomavar{subject}{\spacedallcaps{Betreff}}
+    \opening{Sehr geehrte Damen und Herren,}
+
+    \blindtext
+
+    \closing{Mit freundlichen Grüßen,}
+
+    \ps PS: Dies ist ein Postskriptum.
+
+  \end{letter}
+\end{document}

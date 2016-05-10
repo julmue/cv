@@ -1,0 +1,5 @@
+#!/bin/bash
+
+make -C ./CV
+make -C ./DritteSeite
+make -C ./Enclosure

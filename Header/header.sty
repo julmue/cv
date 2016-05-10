@@ -1,0 +1,100 @@
+% Move the margin to the left of the page 
+\reversemarginpar 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+% polyglossia does not work here because it relies on fontspec,
+% which for whatever reasons resets the stuff loaded traditionally
+% because it uses another engine or whatever
+%\usepackage{polyglossia}
+%\setdefaultlanguage{german}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\usepackage{csquotes}
+\usepackage{tabularx}
+\usepackage{paralist}
+\usepackage{tikz}
+
+% colorscheme
+\usepackage{summer}
+
+\newcommand{\headercolor}{blaze}
+\newcommand{\linkcolor}{california}
+\newcommand{\lightTextColor}{ash}
+
+% globally change text color
+% https://tex.stackexchange.com/questions/26549/how-do-i-globally-set-the-text-color-in-xelatex
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\definecolor{textgray}{HTML}{444444}
+\AtBeginDocument{\globalcolor{textgray}}
+
+% ------------------------------------------
+
+\newcommand{\isym}{$\circ$}
+\renewcommand{\dot}{\ $\cdotp$\ \ }
+
+% Font color of your name at the top
+\renewcommand{\cvheadingfont}{\LARGE\color{\headercolor}} 
+
+% Required for adding links	and customizing them
+\usepackage{hyperref} 
+% Set link colors
+\hypersetup{colorlinks, breaklinks, urlcolor=\linkcolor, linkcolor=\linkcolor} 
+
+% Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{04.2014-05.2014} 
+
+% Define a command for each new block - change spacing and font sizes here: 
+% #1 is the left margin, 
+% #2 is the italic date field and 
+% #3 is the position/employer/location field
+%\newcommand{\NewEntry}[3]{%
+%    \noindent\hangindent=2em\hangafter=0 %
+%    \parbox{\datebox}{%
+%        \small \textit{#1}}\hspace{0.5em} #2 #3 %
+%        \vspace{0.5em} % Add some white space after each new entry
+%    }
+
+\newcommand{\NewEntry}[3]{%
+    \noindent\hangindent=2em\hangafter=0%
+    \textit{#1}\hspace{0.5em}\dot
+    \textit{#2}\hspace{0.5em}\dot
+    \textsc{#3}%
+    \vspace{0.5em}%
+}
+
+% Define a command for descriptions of each entry - change spacing and font sizes here
+\newcommand{\Description}[1]{%
+    \hangindent=2em%
+    \hangafter=0%
+    \noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}%
+} 
+
+\newcommand{\EvenThree}[3]{%
+    \makebox[0.95\textwidth][c]{{#1}\hfill{#2}\hfill{#3}}%
+    \vspace{0.5em}
+}
+
+
+%----------------------------------------------------------------------------------------
+% indentation of items
+\usepackage{enumitem}
+
+% marginnotes shoud not float
+\usepackage{marginnote}
+
+% Modified from the original to use \marginnote instead of \marginpar
+% requires the marginnote package
+\renewcommand{\MarginText}[1]{\marginnote{\raggedleft\itshape\small#1}}
+
+\newcommand{\topic}[1]{%
+    \noindent\spacedlowsmallcaps{\textcolor{blaze}{#1}}\vspace{1em}%
+}

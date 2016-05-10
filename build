@@ -3,3 +3,5 @@
 make -C ./CV
 make -C ./DritteSeite
 make -C ./Enclosure
+pdftk ./CV/cv.pdf ./DritteSeite/dritteSeite.pdf cat output ./Build/CV_Julian_Mueller.pdf
+cp ./Enclosure/enclosure.pdf ./Build/Anhang_Bewerbung_Julian_Mueller.pdf

@@ -1,0 +1,248 @@
+\documentclass[noindent]{scrartcl}
+
+\usepackage{header}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+    \node[align=center] at ([yshift=-7cm]current page.north)%
+         {\huge \spacedallcaps{Curriculum Vitae}};
+    % cover photo
+    \node[align=center] (image) at ([yshift=-13cm]current page.north) %
+         {\includegraphics[width=75mm,height=105mm]{Foto}};
+    % name and address
+    \node[align=center] (name) at ([yshift=-19cm]current page.north) %
+         {\Huge \textcolor{blaze}{\spacedallcaps{Julian Müller}}};
+    \node[align=center] at ([yshift=-20.2cm]current page.north) %
+         {\textcolor{blaze}{\spacedallcaps{Maschinenbau, (B.E)}}};
+    \node[align=center] at ([yshift=-21.2cm]current page.north) %
+         {\textcolor{blaze}{\spacedallcaps{Logik, (M.A.)}}};
+    \node[align=left] at ([xshift=0.3cm,yshift=-25cm]current page.north) % 
+         {\color{textgray}
+			\begin{tabular}{lr}
+             Date of Birth & 29 Octobre 1984 \vspace{0.5em} \\
+
+             Place of Birth & 77694 Kehl (Germany) \vspace{0.5em} \\
+
+             Email & \href{mailto:jul.mue@hotmail.de}{jul.mue@hotmail.de} \vspace{0.5em} \\
+
+             Website & \href{https://julmue.github.io}{julmue.github.io} \vspace{0.5em} \\
+
+             Phone & +49 176 55509278 \vspace{0.5em}  \\
+
+             Address & Josef-Gottwald-Stra\ss e 1 \vspace{0.5em}  \\
+                       & 77654 Offenburg \vspace{0.5em} \\
+                       & Germany\\
+            \end{tabular}
+         };
+\end{tikzpicture}
+%\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+% Your name
+\newpage
+%\begin{cv}{\spacedallcaps{Julian Müller}}\vspace{1.5em} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}
+
+\topic{Education}
+
+\NewEntry{2013-2016}{Logic}{University of Leipzig}
+
+\Description{\MarginText{\href{http://www.sozphil.uni-leipzig.de/cm/logik/}{Master of Logics}\\
+(Grade Point Average: 1.8)}%
+%Abschluss: 1.6 (angestrebt)\newline%
+Specializations:
+\EvenThree
+    {\isym\ \textit{Constraint Programming}}%
+    {\isym\ \textit{Paraconsistent Logics}}%
+    {\isym\ \textit{Knowledge Representation}}
+{Thesis: \textit{The Lambda Calculus as a paradigmatic Concept of Computatbility}\newline
+\isym\ \textit{In Computer Science}: As a foundation for programming languages\newline
+\isym\ \textit{In Proof Theory}: Curry-Howard-Lambek-isomorphism\newline
+\isym\ \textit{In Mathematics}: As the internal language of cartesian closed categories\newline
+Supervisor: Dr.~Peter \textsc{Steinacker}, Prof.~Thomas \textsc{Bartelborth}}\newline
+Due: 14.07.2016}
+
+%------------------------------------------------
+
+\NewEntry{2008-2013}{Mechanical Engineering}{RFH Köln}
+
+\Description{\MarginText{Bachelor of Engineering\\(Grade Point Average: 1.8)}%
+Specialization:
+\EvenThree%
+    {\isym\ \textit{Technical Optics / Laser Technology}}%
+    {\isym\ \textit{Mechatronics}}%
+    {\isym\ \textit{Programming in C}}%
+Thesis (Grade 1.0): \textit{Wear Detection of Cutting Tools in Tunneling}\newline
+\isym\ \textit{Development and Construction of a Laser Scanner for Wear Detection}\newline
+\isym\ \textit{Comparison of Methods for Industrial Image Processing (2d/3d)}\newline
+\isym\ \textit{Project specific analysis of geometric and logistic constraints of\\ 
+               \hspace{0.8em}tunneling processes}\newline
+Supervisor: Prof.~Werner \textsc{Simon}, Prof.~Marcus \textsc{Scholl}}
+
+\NewEntry{2004-2007}{Event Organizer}{Angell Institut Freiburg}
+
+\Description{\MarginText{Event Organizer}%
+Training as an \textit{International Event Organizer}.}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\topic{Work Experience}
+
+% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\NewEntry{04/2012-07/2012}{Working Student}{Herrenknecht AG}
+
+\Description{\MarginText{Working Studend\\Research \& Development}%
+Completion of the research project :\newline
+Design and Construction of a test bench for laser triangulation:\newline
+\isym\ Calculation of the parameters of the optical measuring unit\newline
+\isym\ Design, implementation and commissioning of the prototype
+}
+
+\NewEntry{10/2010-04/2012}{Diplomate (R\&D)}{Herrenknecht AG}
+
+\Description{\MarginText{Diplomate\\Research \& Development}%
+Comparison of procedurs for optical measurment:\newline
+\isym\ Testing and examination of depth-map generating procedures\newline
+\isym\ Examination of procedures for feature detection in image data\newline
+\isym\ Analysis of processes in mechanized tunneling\newline
+\isym\ Developing a conceptual design of an optical measuring system
+}
+
+\NewEntry{09/2010-03/2011}{Intern (R\&D)}{Herrenknecht AG}
+     
+\Description{\MarginText{Intern\\Research \& Development}%
+Development of concepts for mechanized tunneling:\newline
+\isym\ Project: concepts of mechanized tunneling in nuclear research\newline
+\isym\ Concept for traffic tunneling: expansion of existing tunnels under \\
+       \hspace{0.85em}upkeep of road- and railtraffic
+}
+
+
+\NewEntry{01/2009-09/2009}{Tutor (Mathematics)}{RFH Köln}
+
+\Description{\MarginText{Tutor\\Mathematics}%
+Tutorial for engineering mathematics:\newline
+\isym\ Foundations of engineering mathematics\newline
+\isym\ Calculus\newline
+\isym\ Linear algebra
+}
+
+\NewEntry{04/2006-07/2006}{Intern (Administration)}{LLombart Export}
+     
+\Description{\MarginText{Intern\\(Administration)}%
+Internship abroad --- task area in administration:\\ 
+Office work, translations
+}
+
+% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	Projekte
+%----------------------------------------------------------------------------------------
+\topic{Software Projects}
+
+\NewEntry{Functional Programming}{Haskell}{\href{https://github.com/julmue/UntypedLambda}{Project Page}}
+
+\Description{\MarginText{Interpreter}%
+Interpreter for the untyped lambda calculus;
+Besides being the paradigmatic language for functional programming, the lambda calculus sees 
+wide application as an intermediate language for compilers.
+}
+
+\NewEntry{Functional Programming}{Haskell}{\href{https://github.com/julmue/lfo}{Project Page}}
+
+\Description{\MarginText{Type-Checker}%
+Interpreter for the simply typed lambda calculus;
+This calculus is the theoretical foundation for statically typed functional programming languages
+and of major importance in proof theory.
+}
+
+\NewEntry{Constraint Programmierung}{Haskell}{\href{https://github.com/julmue/Clank}{Project Page}}
+
+\Description{\MarginText{Solver}%
+Solver for the paraconsistent propositional logics K3, L3, LP, RM and for classic propositional calculus.
+Applications for these  logics are in robotics, artificial intelligenze and knowledge representation.
+}
+
+\NewEntry{Constraint Programming}{Prolog}{\href{https://github.com/julmue/DpllDimacSatSolver}{Project Page}}
+
+\Description{\MarginText{SAT-Solver}%
+Solver for the satisfiablility problem (SAT) of classical propositional calculus;\\
+This procedure is used widely in the industry,
+especially for solving constructability and planning problems as well as in variant management. 
+}
+
+\NewEntry{Proof Theory}{Haskell}{\href{https://github.com/julmue/HaskellCurryHoward}{Project Page}}
+
+\Description{\MarginText{Proof Theory /\\Combinator Library}%
+The Curry-Howard-Lambek-isomorphism is the central connection 
+of functional programming, logcis and category theory:
+Programs are constructive proofs, and constructive proofs are morphisms.
+}
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\topic{Programming Languages}
+
+\Description{\MarginText{Very Good} Haskell, Prolog, SMT-Lib}
+
+\Description{\MarginText{Good} Java, C, MATLAB, Simulink, OCaml}
+
+\Description{\MarginText{Basics} Scala, SQL, JavaScript/ECMAScript, HTML, CSS, C++, Bash}
+
+
+\topic{Technologies}
+
+\Description{\MarginText{Operating Systems} Linux (Ubuntu, Mint, \dots), Windows}
+
+\Description{\MarginText{Version Control Systems} git}
+
+\Description{\MarginText{Computer Vision} MathWorks Image Processing Toolbox (MATLAB)}
+
+\Description{\MarginText{Testing Frameworks} XUnit-Frameworks in Java, Haskell, Prolog, C++, C, \dots}
+
+
+%-------------------------------------------------------------------------------
+\topic{Languages}
+
+\Description{\MarginText{Mother Tongue} German}
+\Description{\MarginText{Very Good} English}
+\Description{\MarginText{Basics} Spanish}
+
+
+%-------------------------------------------------------------------------------
+\topic{Miscellaneous}
+
+\NewEntry{08/2005-03/2006}{Work \& Travel}{New Zealand}
+
+\Description{\MarginText{Work \& Travel}%
+Language study- and working holiday New Zealand
+}
+
+
+\end{cv}
+
+\end{document}

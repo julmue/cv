@@ -1,7 +1,7 @@
 # project directory
 dirProject = .
 # document name
-docName = cv
+docName = CV_Julian_Mueller_en
 
 # xelatex options
 xelatexOptions = -halt-on-error -file-line-error

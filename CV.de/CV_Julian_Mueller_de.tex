@@ -3,6 +3,8 @@
 
 \usepackage[a4paper,width=13cm, height=27cm]{geometry}
 
+\pagestyle{empty}
+
 \setlist{nosep}
 
 \begin{document}
@@ -25,10 +27,10 @@
     % name and address
     \node[align=center] (name) at ([yshift=-19cm]current page.north) %
          {\Huge \textcolor{magma}{\spacedallcaps{Julian Müller}}};
+     \node[align=center] at ([yshift=-21.2cm]current page.north) %
+         {\textcolor{magma}{\spacedallcaps{Logik, (M.A.)}}};
     \node[align=center] at ([yshift=-20.2cm]current page.north) %
          {\textcolor{magma}{\spacedallcaps{Maschinenbau, (B.E.)}}};
-    \node[align=center] at ([yshift=-21.2cm]current page.north) %
-         {\textcolor{magma}{\spacedallcaps{Logik, (M.A.)}}};
     \node[align=left] at ([xshift=0.3cm,yshift=-25cm]current page.north) % 
          {\color{textgray}
 			\begin{tabular}{lr}
@@ -66,7 +68,7 @@
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
-\NewEntry{seit 2020/01}{Engineering Manager / Solution Owner R\&D}{\snp}
+\NewEntry{Seit 2020/01}{Engineering Manager / Solution Owner R\&D}{\snp}
 
 \Description{\MarginText{Engineering Manager / Solution Owner R\&D}%
 \highlight{Design und Umsetzung eines Produkts zur Prozessautomatisierung} basierend auf symbolischer KI, 
@@ -86,7 +88,7 @@ Weitere Funktion
 \NewEntry{01/2019-01/2020}{Engineer SAP Transformation R\&D}{\snp}
 
 \Description{\MarginText{Engineer R\&D}%
-\highlight{Entwicklung von Systemen für die selektive Datenmigration nach S/4 HANA}:
+\highlight{Entwicklung von Systemen für die selektive Datenmigration nach S/4 HANA}.
 \begin{itemize}[label=\isym]
 \item \highlight{Automatisierung der Finanz- und Logistikmigration nach S/4 HANA}
 \item Entwicklung von \highlight{Analyse- und Tracingsystemen}
@@ -103,17 +105,17 @@ Weiter:
 \NewEntry{01/2017-01/2019}{Consultant SAP Transformation}{\snp}
 
 \Description{\MarginText{Consultant SAP Transformation}%
-\highlight{Entwicklung von Systemen für die  SAP Landscape Transformation (ERP und BW)}:
+\highlight{Entwicklung von Systemen für die  SAP Landscape Transformation (ERP und BW)}.
 \begin{itemize}[label=\isym]
-\item Entwicklung von \highlight{Systemen für die SAP Business Warehouse Transformation}
-\item Transformation SAP Business Warehouse in Projekten
+\item Entwicklung und Umsetzung von Transformationen für \highlight{SAP BW}
+\item Finanz- und Logistikmigrationen
 \item \highlight{Data Engineering} und \highlight{Data Analysis}
 \item Presales, Schulungen und Vorträge
 \end{itemize}
 }
 
 
-\NewEntry{10/2010-07/2012}{Ingenieur R\&D (Werkstud.)}{\herrenknecht}
+\NewEntry{10/2011-07/2012}{Ingenieur R\&D (Werkstud.)}{\herrenknecht}
 
 \Description{\MarginText{Ingenieur R\&D (Werkstudent)}%
 \highlight{Anwendung von Verfahren der künstlichen Intelligenz} zur Prozesssicherung im Tunnelvortrieb.
@@ -130,10 +132,10 @@ Weiter:
 \NewEntry{09/2010-03/2011}{Ingenieur R\&D (Praktikum)}{\herrenknecht}
 
 \Description{\MarginText{Ingenieur R\&D (Praktikum)}%
-Entwicklung von Konzepten zum maschinellen Tunnelvortrieb.
+Entwicklung von Konzepten und Prototypen für den maschinellen Tunnelvortrieb.
 \begin{itemize}[label=\isym]
-\item Projekt: maschineller Tunnelvortrieb in der nuklearen Forschung
-\item Maschinenkonzept: Aufweitung bestehender Tunnel unter Aufrechterhaltung des Straßen- und Bahnverkehrs
+\item Maschineller Tunnelvortrieb in der nuklearen Forschung
+\item Aufweitung bestehender Tunnel unter Aufrechterhaltung des Straßen- und Bahnverkehrs
 \end{itemize}
 }
 
@@ -170,8 +172,7 @@ Spezialisierungen:
 \isym\ \textit{In der Informatik}: Als Grundlage funktionaler Programmiersprachen\newline
 \isym\ \textit{In der Beweistheorie}: Curry-Howard-Lambek-Isomorphismus\newline
 \isym\ \textit{In der Mathematik}: Als interne Sprache kartesisch geschlossener Kategorien\newline
-Betreuer: Dr.~Peter \textsc{Steinacker}, Prof.~Thomas \textsc{Bartelborth}}\newline
-(Note 1.0)}
+Betreuer: Dr.~Peter \textsc{Steinacker}, Prof.~Thomas \textsc{Bartelborth}}}
 
 %------------------------------------------------
 
@@ -207,11 +208,12 @@ Ausbildung zum \textit{International Event Organizer}.}
 \begin{itemize}[label=\isym]
 \item Aufbau und Führung verteilter Entwicklungsteams (Teamsprache Englisch)
 \item Auswahl, Recruiting und Onboarding von Teammitgliedern
-\item Coaching in Kommunikations- und Feedbackkultur
-\item Coaching in Methoden des Softwareentwurfs und der Softwarequalität
-\item Workshops zu Team- und Unternehmenswerte (The golden Circle - What, How, Why)
+\item Coaching Kommunikations- und Feedbackkultur
+\item Coaching Methoden des Softwareentwurfs und der Softwarequalität
+\item Workshops zu Team- und Unternehmenswerten
 \item Einführung und Verbesserung agiler Entwicklungsmethoden
-\item Integration interner und externer Stakeholder
+\item Koordination mit internern und externern Stakeholdern
+\item Ressourcenplanung und -management
 \end{itemize}
 }
 
@@ -220,8 +222,8 @@ Ausbildung zum \textit{International Event Organizer}.}
 \Description{\MarginText{Agile Entwicklungsmethoden}
 
 \begin{itemize}[label=\isym]
-\item Scrum und Kanban (aktuelle Rolle: Solution Owner)
-\item Design Thinking (Empthy, Define, Ideate)
+\item Scrum und Kanban
+\item Design Thinking
 \item Lean Management und Lean Startup
 \end{itemize}
 }
@@ -289,9 +291,9 @@ Ausbildung zum \textit{International Event Organizer}.}
 \end{itemize}
 \highlight{SNP Transformation Solutions}
 \begin{itemize}[label=\isym]
-\item SNP Mission Control (Prozesskontrolle der Transformation)
+\item SNP Mission Control (Prozesskontrolle)
 \item SNP S/4 Cockpit (Migration nach S/4 HANA)
-\item SNP Transformation Cockpit (SAP Landscape Transformation Solution)
+\item SNP Transformation Cockpit (SAP Landscape Transformation)
 \end{itemize}
 }
 
@@ -299,15 +301,15 @@ Ausbildung zum \textit{International Event Organizer}.}
 \NewTechnology{Künstliche Intelligenz}
 \label{tec_ai}
 
-\Description{\MarginText{SAP Landscape Transformation}%
-Verfahren symbolischer künstlicher Intelligenz
+\Description{\MarginText{Künstliche Intelligenz}%
+Verfahren symbolischer künstlicher Intelligenz.
 \begin{itemize}[label=\isym]
 \item \href{https://en.wikipedia.org/wiki/Automated_planning_and_scheduling}{Automatisierte Planung}
 \item \href{https://en.wikipedia.org/wiki/Boolean_satisfiability_problem}{Propositional Satisfiability (SAT)}
 \item \href{https://en.wikipedia.org/wiki/Satisfiability_modulo_theories}{Satisfiability Modulo Theories (SMT)}
 \item \href{https://en.wikipedia.org/wiki/Model_checking}{Bounded Model Checking}
 \end{itemize}
-Verfahren numerischer künstlicher Intelligenz
+Verfahren numerischer künstlicher Intelligenz.
 \begin{itemize}[label=\isym]
 \item \href{https://en.wikipedia.org/wiki/Artificial_neural_network}{Künstliche Neuronale Netzwerke (KNN)}
 \item \href{https://en.wikipedia.org/wiki/Support_vector_machine}{Support-Vector-Machine (SVM)}
@@ -364,13 +366,11 @@ Entwicklung von funktionalen und imperativen Programmiersprachen in Haskell.
 \item Python
 \item R
 \item SQL, SQLScript
+\item JavaScript, TypeScript
 \item Prolog
 \item C
 \end{itemize}
 }
-
-
-
 
 
 %----------------------------------------------------------------------------------------
@@ -380,20 +380,24 @@ Entwicklung von funktionalen und imperativen Programmiersprachen in Haskell.
 
 \topic{Projekterfahrung}
 
-\NewProject{Seit 2020/01}{Aufbau und Führung eines Dev-Teams}{SNP}
+\NewProject{Seit 2020/01}{Aufbau und Führung eines Innovation-Teams}{SNP}
 \label{proj_engineering_manager}
 
 \Description{\MarginText{\highlight{Engineering Manager}}%
 %\textbf{Beschreibung}\newline
-Aufbau und Führung eines verteilten 5-köpfigen agilen Entwicklungsteams; die Teamsprache ist Englisch.
-Schwerpunkte sind SAP ABAP und SAP HANA, Compilerbau, funktionale Programmierung sowie Verfahren der symbolischen künstlichen Intelligenz.\newline
-\textbf{Tätigkeiten}
+Aufbau und Führung eines verteilten 5-köpfigen Entwicklungsteams; die Teamsprache ist Englisch.
+Fokus liegt auf agilen Entwicklungsmethoden, der technologische Schwerpunkte sind SAP Landscape Transformationen, Compilerbau, funktionale Programmierung sowie Verfahren der symbolischen künstlichen Intelligenz.\newline
+\textbf{Tätigkeiten als Engineering Manager}
 \begin{itemize}[label=\isym]
-\item Recruiting und Onboarding
-\item Coaching und Teamentwicklung
-\item Implementieren agiler Entwicklungsmethoden
+\item Recruiting und Onboarding neuer Teammitglieder
+\item Ressourcenplanung und -management für das Team
+\item Definition und Kontrolle von Entwicklungs- und Qualitätszielen 
+\item Implementierung agiler Entwicklungsmethoden
+\item Individuelles Coaching und Teamentwicklung
+\item Aufbau der Kommunikations- und Kollaborationskultur
+\item Integration des Teams in das Unternehmen
 \end{itemize}
-\textbf{Technologien (Auszug)}
+\textbf{Technologien}
 \begin{itemize}[label=\isym]
 \item Jira, Confluence
 \item Microsoft Teams, MS Office
@@ -408,18 +412,18 @@ Schwerpunkte sind SAP ABAP und SAP HANA, Compilerbau, funktionale Programmierung
 \Description{\MarginText{\highlight{Solution Owner}}%
 %\textbf{Beschreibung}\newline
 Design und Umsetzung eines Produkts im Bereich Prozessautomatisierung basierend auf symbolischer KI, funktionaler Programmierung, ABAP und HANA. 
-Meine Tätigkeiten umfassen dabei die Aufgaben des Solution Owners als auch die Aufgaben des Lead Engineers.\newline
-\textbf{Tätigkeiten}
+Das Aufgabenprofil umfasst dabei sowohl die Rolle des Solution Owners als auch die des Lead Engineers.\newline
+\textbf{Tätigkeiten als Solution Owner}
 \begin{itemize}[label=\isym]
 \item Konzeption der Produktvision
 \item Definition der Roadmap
+\item Implementierung von Prototypen
 \item Kommunikation und Abstimmung mit Stakeholdern und Experten
 \item Pflege und Priorisierung des Backlogs
-\item Sprintplanung und Scrumevents
-\item Implementierung von Prototypen
+\item Sprintplanung und Abstimmung mit den Entwicklern während des Sprints
 \item Koordination der Forschung
 \end{itemize}
-\textbf{Technologien (Auszug)}
+\textbf{Technologien}
 \begin{itemize}[label=\isym]
 \item Verfahren und Systeme der symbolischen künstlichen Intelligenz
 \item Verfahren und Systeme des Compilerbaus und der funktionalen Programmierung
@@ -436,7 +440,7 @@ Meine Tätigkeiten umfassen dabei die Aufgaben des Solution Owners als auch die 
 %\textbf{Beschreibung}\newline
 Das \sdte\ ist eine Arbeitsgruppe aus SAP, SNP, CBS, 
 Natuvion und Datavard in welchem Konzepte, Technologien und Best-Practices erarbeitet werden um den Top 500 der ERP-Großkunden die Migration auf SAP S/4HANA zu ermöglichen.\newline
-\textbf{Tätigkeiten}
+\textbf{Tätigkeiten als Lead Engineer}
 \begin{itemize}[label=\isym]
 \item Leitender Vertreter der SNP im Technology Stream des SDTE Projekts
 \item Koordination mit anderen Streams (Governance, Architecture, Application)
@@ -461,12 +465,12 @@ Natuvion und Datavard in welchem Konzepte, Technologien und Best-Practices erarb
 \NewProject{2019/01-2019/10}{Roadmap nach S/4 HANA}{SNP}
 \label{proj_roadmap_s4}
 
-\Description{\MarginText{\highlight{Project Lead}}%
+\Description{\MarginText{\highlight{Project Lead / Lead Engineer}}%
 %\textbf{Beschreibung}\newline
-Im Rahmen des Excellenzclusters wurde eine Roadmap nach S/4 HANA entwickelt. 
+Im Rahmen des SNP Excellenzclusters für junge Führungskräfte wurde eine Roadmap nach S/4 HANA entwickelt. 
 Basierend auf dem Design-Thinking-Prozess wurden in enger Zusammenarbeit 
 mit den Stakeholdern diverse funktionale Prototypen erstellt.\newline
-\textbf{Tätigkeiten}
+\textbf{Tätigkeiten als Project Lead / Lead Engineer}
 \begin{itemize}[label=\isym]
 \item Design Thinking: Planung und Durchführung von Workshops mit Wissensträgern und Stakeholdern
 \item Design Thinking: Erstellen von Personas
@@ -489,7 +493,7 @@ mit den Stakeholdern diverse funktionale Prototypen erstellt.\newline
 %\textbf{Beschreibung}\newline
 Der Aufbau und die Integration des Rechnungswesens und der Logistik 
 sind kritische Elemente für eine Migration von R3 nach S/4 HANA.\newline
-\textbf{Tätigkeiten}
+\textbf{Tätigkeiten als Engineer}
 \begin{itemize}[label=\isym]
 \item Integration von Migrationslogik in das SNP S/4 Cockpit
 \item System- und Fehleranalyse
@@ -512,9 +516,9 @@ sind kritische Elemente für eine Migration von R3 nach S/4 HANA.\newline
 %\textbf{Beschreibung}\newline
 Konversion einer aus fünf Systemen bestehenden BW-Landschaft basierend auf dem 
 Regelwerk einer sich gleichzeitig in der Entwicklung befindlichen ERP-Migration.\newline
-\textbf{Tätigkeiten}
+\textbf{Tätigkeiten als Engineer}
 \begin{itemize}[label=\isym]
-\item Technische Projektleitung eines 6-löpfigen Teams
+\item Technische Projektleitung eines 6-köpfigen Teams
 \item Konzept und Umsetzung: Migration DSO InfoProvider
      \begin{itemize}[label=\cdot]
 	\item Prototypenbau und Proof-Of-Concept
@@ -536,17 +540,17 @@ Regelwerk einer sich gleichzeitig in der Entwicklung befindlichen ERP-Migration.
 }
 
 
-\NewProject{2017/07}{Schulungsleitung ABAP Programming for SAP HANA}{Mercoline, SNP}
+\NewProject{2017/07}{Schulung ABAP Programming for SAP HANA}{Mercoline}
 \label{proj_training_s4}
 
 \Description{\MarginText{\highlight{Trainer}}%
 %\textbf{Beschreibung}\newline
-Vorbereitung und Leitung von Schulungen zum Thema ABAP für HANA, ABAP in Eclipse und modernes ABAP (ABAP Version >= 7.49)
-\textbf{Tätigkeiten}
+Vorbereitung und Leitung von Schulungen zum Thema ABAP für HANA, ABAP in Eclipse und modernes ABAP (ABAP Version >= 7.49).\newline
+\textbf{Tätigkeiten als Trainer}
 \begin{itemize}[label=\isym]
 \item Ausarbeitung Schulungsunterlagen und Schulungsübungen
 \item Durchführung zweier einwöchiger Schulungen beim Kunden (jeweils 8 Schulungsteilnehmer)
-\item Inhalte entsprechen HA400 (ABAP Programming in HANA) und BC404 (ABAP in Eclipse)
+\item Inhalte entsprechen ungefähr HA400 (ABAP Programming in HANA) und BC404 (ABAP in Eclipse)
 \end{itemize}
 \textbf{Technologien}
 \begin{itemize}[label=\isym]
@@ -613,8 +617,9 @@ Programme sind konstruktive Beweise, konstruktive Beweise sind Morphismen.
 
 
 %-------------------------------------------------------------------------------
-\topic{Fremdsprachen}
+\topic{Sprachen}
 
+\Description{\MarginText{Muttersprache}Deutsch}
 \Description{\MarginText{Sehr gut}Englisch (\emph{verhandlungssicher})}
 \Description{\MarginText{Grundlagen}Spanisch}
 

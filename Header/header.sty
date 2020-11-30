@@ -69,11 +69,41 @@
 %    }
 
 \newcommand{\NewEntry}[3]{%
+    \phantomsection %hyperref needs this for labels
     \noindent\hangindent=2em\hangafter=0%
     \textit{#1}\hspace{0.5em}\dot
-    \textit{#2}\hspace{0.5em}\dot
+    \textbf{\textit{#2}\hspace{0.5em}}\dot
     \textsc{#3}%
     \vspace{0.5em}%
+}
+
+\newcommand{\NewMethodology}[1]{%
+    \phantomsection %hyperref needs this for labels
+    \noindent\hangindent=2em\hangafter=0%
+    \textbf{\textit{#1}}\hspace{0.5em}
+    \vspace{0.5em}%
+}
+
+\newcommand{\NewTechnology}[1]{%
+    \phantomsection %hyperref needs this for labels
+    \noindent\hangindent=2em\hangafter=0%
+    \textbf{\textit{#1}}\hspace{0.5em}
+    \vspace{0.5em}%
+}
+
+
+\newcommand{\NewProject}[3]{%
+    \phantomsection %hyperref needs this for labels
+    \noindent\hangindent=2em\hangafter=0%
+    \textit{#1}\hspace{0.5em}\dot
+    \textbf{\textit{#2}\hspace{0.5em}}\dot
+    \textsc{#3}%
+    \vspace{0.5em}%
+}
+
+
+\newcommand{\details}[1]{%
+    (\hyperref[#1]{link})%
 }
 
 % Define a command for descriptions of each entry - change spacing and font sizes here
@@ -101,5 +131,7 @@
 \renewcommand{\MarginText}[1]{\marginnote{\raggedleft\itshape\small#1}}
 
 \newcommand{\topic}[1]{%
-    \noindent\spacedlowsmallcaps{\textcolor{blaze}{#1}}\vspace{1em}%
+    \noindent\spacedlowsmallcaps{\textcolor{magma}{#1}}\vspace{1em}%
 }
+
+\newcommand{\highlight}[1]{\textbf{#1}}%{\textcolor{magma}{#1}}

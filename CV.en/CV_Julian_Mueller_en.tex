@@ -1,9 +1,17 @@
 \documentclass[noindent]{scrartcl}
+\usepackage{../Header/header}
 
-\usepackage{header}
+\usepackage[a4paper,width=13cm, height=27cm]{geometry}
+
+\pagestyle{empty}
+
+\setlist{nosep}
 
 \begin{document}
 
+\newcommand{\snp}{\href{www.snpgroup.com}{SNP SE}}
+\newcommand{\herrenknecht}{\href{https://www.herrenknecht.com/}{Herrenknecht AG}}
+\newcommand{\sdte}{\href{https://news.sap.com/germany/2019/05/arbeitsgruppe-migration-s4hana/}{Selective Data Transition Engagement}}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -15,233 +23,422 @@
          {\huge \spacedallcaps{Curriculum Vitae}};
     % cover photo
     \node[align=center] (image) at ([yshift=-13cm]current page.north) %
-         {\includegraphics[width=75mm,height=105mm]{Foto}};
+         {\includegraphics[width=75mm]{Foto}};
     % name and address
     \node[align=center] (name) at ([yshift=-19cm]current page.north) %
-         {\Huge \textcolor{blaze}{\spacedallcaps{Julian Müller}}};
+         {\Huge \textcolor{magma}{\spacedallcaps{Julian Müller}}};
+     \node[align=center] at ([yshift=-21.2cm]current page.north) %
+         {\textcolor{magma}{\spacedallcaps{Logik, (M.A.)}}};
     \node[align=center] at ([yshift=-20.2cm]current page.north) %
-         {\textcolor{blaze}{\spacedallcaps{Mechanical Engineering, (B.E.)}}};
-    \node[align=center] at ([yshift=-21.2cm]current page.north) %
-         {\textcolor{blaze}{\spacedallcaps{Logics, (M.A.)}}};
+         {\textcolor{magma}{\spacedallcaps{Maschinenbau, (B.E.)}}};
     \node[align=left] at ([xshift=0.3cm,yshift=-25cm]current page.north) % 
          {\color{textgray}
 			\begin{tabular}{lr}
-             Date of Birth & 29 Octobre 1984 \vspace{0.5em} \\
+             Geburtsdatum & 29 Oktober 1984 \vspace{0.5em} \\
 
-             Place of Birth & 77694 Kehl (Germany) \vspace{0.5em} \\
+             Geburtsort & 77694 Kehl \vspace{0.5em} \\
 
              Email & \href{mailto:jul.mue@hotmail.de}{jul.mue@hotmail.de} \vspace{0.5em} \\
 
-             Website & \href{https://julmue.github.io}{julmue.github.io} \vspace{0.5em} \\
+             % Website & \href{https://julmue.github.io}{julmue.github.io} \vspace{0.5em} \\
 
-             Phone & +49 176 55509278 \vspace{0.5em}  \\
+             Telefon & +49 176 20562999 \vspace{0.5em}  \\
 
-             Address & Josef-Gottwald-Stra\ss e 1 \vspace{0.5em}  \\
-                       & 77654 Offenburg \vspace{0.5em} \\
-                       & Germany\\
+             Adresse & Schlo\ss stra\ss e 34 \vspace{0.5em}  \\
+                       & 14059 Berlin \\
             \end{tabular}
          };
 \end{tikzpicture}
-%\thispagestyle{empty} % Stop the page count at the bottom of the first page
 
 % Your name
 \newpage
-%\begin{cv}{\spacedallcaps{Julian Müller}}\vspace{1.5em} 
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+\thispagestyle{empty}
 
-\begin{cv}
-
-\topic{Education}
-
-\NewEntry{2013-2016}{Logic (M.A.)}{University of Leipzig}
-
-\Description{\MarginText{\href{http://www.sozphil.uni-leipzig.de/cm/logik/}{Logics (Master)}\\
-(Grade 1.6 /\\ GPA 3.4)}%
-%Abschluss: 1.6 (angestrebt)\newline%
-Specializations:
-\EvenThree
-    {\isym\ \textit{Constraint Programming}}%
-    {\isym\ \textit{Paraconsistent Logics}}%
-    {\isym\ \textit{Knowledge Representation}}
-{Thesis (Grade 1.0 / GPA 4.0): \textit{The Untyped Lambda Calculus}\newline
-\isym\ \textit{In Computer Science}: As a foundation for programming languages\newline
-\isym\ \textit{In Proof Theory}: Curry-Howard-Lambek-isomorphism\newline
-\isym\ \textit{In Mathematics}: As the internal language of cartesian closed categories\newline
-Supervisor: Dr.~Peter \textsc{Steinacker}, Prof.~Thomas \textsc{Bartelborth}}\newline
-Due: 14.07.2016}
-
-%------------------------------------------------
-
-\NewEntry{2008-2013}{Mechanical Engineering (B.E.)}{RFH Köln}
-
-\Description{\MarginText{Mechanical Engineering (Bachelor)\\(Grade 1.8 /\\ GPA 3.2)}%
-Specialization:
-\EvenThree%
-    {\isym\ \textit{Technical Optics / Laser Technology}}%
-    {\isym\ \textit{Mechatronics}}%
-    {\isym\ \textit{Programming in C}}%
-Thesis (Grade 1.0 / GPA 4.0): \textit{Wear Detection of Cutting Tools in Tunneling}\newline
-\isym\ \textit{Development and construction of a laser scanner for wear detection}\newline
-\isym\ \textit{Comparison of methods for industrial image processing (2d/3d)}\newline
-\isym\ \textit{Project specific analysis of geometric and logistic constraints of\\ 
-               \hspace{0.8em}tunneling processes}\newline
-Supervisor: Prof.~Werner \textsc{Simon}, Prof.~Marcus \textsc{Scholl}}
-
-\NewEntry{2004-2007}{Event Organizer}{Angell Institut Freiburg}
-
-\Description{\MarginText{Event Organizer}%
-Training as an \textit{International Event Organizer}.}
-%------------------------------------------------
+%\begin{cv}
+\begin{cv}{\spacedallcaps{Julian Müller}}\vspace{1.5em} 
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\topic{Work Experience}
+\topic{Berufspraxis}
 
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
-\NewEntry{04/2012-07/2012}{Working Student}{Herrenknecht AG}
+\NewEntry{Seit 2020/01%
+     \MarginText{Engineering Manager / Solution Owner R\&D}%
+     }{Engineering Manager / Solution Owner R\&D}{\snp}
 
-\Description{\MarginText{Working Studend\\Research \& Development}%
-Completion of the research project :\newline
-Design and construction of a test bench for laser triangulation:\newline
-\isym\ Calculation of the parameters of the optical measuring unit\newline
-\isym\ Design, implementation and commissioning of the prototype
+\Description{%
+Design und Umsetzung eines Produkts zur Prozessautomatisierung basierend auf symbolischer KI, 
+funktionaler Programmierung, ABAP und HANA.
+Aufbau und Führung eines verteilten High-Preformance Teams zur Umsetzung des Produkts.
+\begin{itemize}[label=\isym]
+\item Engineering Manager: Aufbau und Führung eines 5-köpfigen verteilten Entwicklungsteams \details{proj_engineering_manager}
+\item Solution Owner: Agiler Produktentwurf und Entwicklungssteuerung \details{proj_sdte}
+\item Lead Engineer: Systementwurf, Architektur, Implementierung von Prototypen
+\end{itemize}
+Weiter:
+\begin{itemize}[label=\isym]
+\item Lead Engineer für die SNP im \sdte\ der SAP
+\end{itemize}
 }
 
-\NewEntry{10/2010-04/2012}{Diplomate (R\&D)}{Herrenknecht AG}
+\NewEntry{01/2019-01/2020%
+     \MarginText{Engineer R\&D}%
+     }{Engineer SAP Transformation R\&D}{\snp}
 
-\Description{\MarginText{Diplomate\\Research \& Development}%
-Comparison of procedurs for optical measurment:\newline
-\isym\ Testing and examination of depth-map generating procedures\newline
-\isym\ Examination of procedures for feature detection in image data\newline
-\isym\ Analysis of processes in mechanized tunneling\newline
-\isym\ Developing a conceptual design of an optical measuring system
+\Description{%
+Entwicklung von Systemen für die selektive Datenmigration nach S/4 HANA.
+\begin{itemize}[label=\isym]
+\item Automatisierung der Finanz- und Logistikmigration nach S/4 HANA
+\item Entwicklung von Analyse- und Tracingsystemen
+\item Data Engineering und Data Analysis
+\item Presales, Schulungen und Vorträge
+\end{itemize}
+Weiter:
+\begin{itemize}[label=\isym]
+\item Absolvent des SNP Exzellenzprogramms für junge Führungskräfte
+\end{itemize}
 }
 
-\NewEntry{09/2010-03/2011}{Intern (R\&D)}{Herrenknecht AG}
-     
-\Description{\MarginText{Intern\\Research \& Development}%
-Development of concepts for mechanized tunneling:\newline
-\isym\ Project: concepts of mechanized tunneling in nuclear research\newline
-\isym\ Concept for traffic tunneling: expansion of existing tunnels under \\
-       \hspace{0.85em}upkeep of road- and railtraffic
+
+\NewEntry{01/2017-01/2019\MarginText{Consultant SAP Transformation}%
+     }{Consultant SAP Transformation}{\snp}
+
+\Description{%
+Entwicklung von Systemen für die  SAP Landscape Transformation (ERP und BW).
+\begin{itemize}[label=\isym]
+\item Entwicklung und Umsetzung von Transformationen für SAP BW
+\item Finanz- und Logistikmigrationen
+\item Data Engineering und Data Analysis
+\item Presales, Schulungen und Vorträge
+\end{itemize}
 }
 
+\NewEntry{10/2011-07/2012%
+     \MarginText{Ingenieur R\&D}%
+     }{Ingenieur R\&D (Werkstud.)}{\herrenknecht}
 
-\NewEntry{01/2009-09/2009}{Tutor (Mathematics)}{RFH Köln}
-
-\Description{\MarginText{Tutor\\Mathematics}%
-Tutorial for engineering mathematics:\newline
-\isym\ Foundations of engineering mathematics\newline
-\isym\ Calculus\newline
-\isym\ Linear algebra
+\Description{%
+Anwendung von Verfahren der künstlichen Intelligenz zur Prozesssicherung im Tunnelvortrieb.
+Entwurf, Programmierung und Inbetriebnahme eines 3D-Lasersystems zur Verleißmessung bei Abbauwerkzeugen.
 }
 
-\NewEntry{04/2006-07/2006}{Intern (Administration)}{LLombart Export}
-     
-\Description{\MarginText{Intern\\(Administration)}%
-Internship abroad --- task area in administration:\\ 
-Office work, translations
-}
+\NewEntry{\MarginText{Ingenieur R\&D}09/2010-03/2011}{Ingenieur R\&D (Praktikum)}{\herrenknecht}
 
-% ------------------------------------------------------------------------------
-% ------------------------------------------------------------------------------
-% ------------------------------------------------------------------------------
+\NewEntry{01/2009-09/2009\MarginText{Tutor}}{Tutor Mathematik}{RFH Köln}
 
-\newpage
 %----------------------------------------------------------------------------------------
-%	Projekte
+%	EDUCATION
 %----------------------------------------------------------------------------------------
-\topic{Software Projects}
 
-\NewEntry{Functional Programming}{Haskell}{\href{https://github.com/julmue/UntypedLambda}{Project Page}}
+\topic{Ausbildung}
 
-\Description{\MarginText{Interpreter}%
-Interpreter for the untyped lambda calculus.
-Besides being the paradigmatic language for functional programming, the lambda calculus sees 
-wide application as an intermediate language for compilers.
-}
+\NewEntry{2013-2016\MarginText{\href{http://www.sozphil.uni-leipzig.de/cm/logik/}{Master Logik}\\
+(Endnote: 1.6)}}{Logik (M.A.)}{Universität Leipzig}
 
-\NewEntry{Functional Programming}{Haskell}{\href{https://github.com/julmue/lfo}{Project Page}}
-
-\Description{\MarginText{Type-Checker}%
-Interpreter for the simply typed lambda calculus.
-This calculus is the theoretical foundation for statically typed functional programming languages
-and of major importance in proof theory.
-}
-
-\NewEntry{Constraint Programmierung}{Haskell}{\href{https://github.com/julmue/Clank}{Project Page}}
-
-\Description{\MarginText{Solver}%
-Solver for the paraconsistent propositional logics K3, L3, LP, RM and for classic propositional calculus.
-Applications for these  logics are in robotics, artificial intelligenze and knowledge representation.
-}
-
-\NewEntry{Constraint Programming}{Prolog}{\href{https://github.com/julmue/DpllDimacSatSolver}{Project Page}}
-
-\Description{\MarginText{SAT-Solver}%
-Solver for the satisfiablility problem (SAT) of classical propositional calculus;\\
-This procedure is used widely in the industry,
-especially for solving constructability and planning problems as well as in variant management. 
-}
-
-\NewEntry{Proof Theory}{Haskell}{\href{https://github.com/julmue/HaskellCurryHoward}{Project Page}}
-
-\Description{\MarginText{Proof Theory /\\Combinator Library}%
-The Curry-Howard-Lambek-isomorphism is the central connection 
-of functional programming, logcis and category theory:
-Programs are constructive proofs, and constructive proofs are morphisms.
-}
+\Description{%
+{Abschlussarbeit (Note 1.0): \textit{Der untypisierte Lambdakalkül und seine Anwendung}%\
+}}
 
 %------------------------------------------------
 
+\NewEntry{2008-2013%
+     \MarginText{Maschinenbau\\(Endnote: 1.8)}%
+     }{Maschinenbau (B.E.)}{RFH Köln}
 
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-\topic{Programming Languages}
-
-\Description{\MarginText{Very Good} Haskell, Prolog}
-
-\Description{\MarginText{Good} Java, C, MATLAB, Simulink, OCaml}
-
-\Description{\MarginText{Basics} Scala, SQL, JavaScript/ECMAScript, HTML, CSS, C++, Bash, SMT-LIB}
-
-
-\topic{Technologies}
-
-\Description{\MarginText{Operating Systems} Linux (Ubuntu, Mint, \dots), Windows}
-
-\Description{\MarginText{Version Control Systems} git}
-
-\Description{\MarginText{Computer Vision} MathWorks Image Processing Toolbox (MATLAB)}
-
-\Description{\MarginText{Testing Frameworks} XUnit-Frameworks in Java, Haskell, Prolog, C++, C, \dots}
-
-
-%-------------------------------------------------------------------------------
-\topic{Languages}
-
-\Description{\MarginText{Mother Tongue} German}
-\Description{\MarginText{Very Good} English}
-\Description{\MarginText{Basics} Spanish}
-
-
-%-------------------------------------------------------------------------------
-\topic{Miscellaneous}
-
-\NewEntry{08/2005-03/2006}{Work \& Travel}{New Zealand}
-
-\Description{\MarginText{Work \& Travel}%
-Language study- and working holiday New Zealand
+\Description{%
+Abschlussarbeit (Note 1.0): \textit{Verschlei\ss erkennung bei Werkzeugen im Tunnelbau}%
 }
 
+\NewEntry{2004-\MarginText{Event Organizer}}{Event Organizer}{Angell Institut Freiburg}
+
+%-------------------------------------------------------------------------------
+\topic{Sprachen}
+
+\Description{\MarginText{Muttersprache}Deutsch}
+\Description{\MarginText{Sehr gut}Englisch (\emph{verhandlungssicher})}
+\Description{\MarginText{Grundlagen}Spanisch}
+
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	METHODOLOGY
+%----------------------------------------------------------------------------------------
+\topic{Methoden und Kenntnisse}
+
+\NewMethodology{Team Development und Leadership}
+\Description{\MarginText{Team Development und Leadership}
+
+\begin{itemize}[label=\isym]
+\item Aufbau und Führung verteilter Entwicklungsteams
+\item Coaching Kommunikations- und Feedbackkultur
+\item Coaching Methoden des Softwareentwurfs und der Softwarequalität
+\item Einführung und Verbesserung agiler Entwicklungsmethoden
+\item Koordination mit internern und externern Stakeholdern
+\item Ressourcenplanung und -management
+\end{itemize}
+}
+
+
+\NewMethodology{Agile Entwicklungsmethoden}
+\Description{\MarginText{Agile Entwicklungsmethoden}
+
+\begin{itemize}[label=\isym]
+\item Scrum und Kanban
+\item Design Thinking
+\item Lean Management und Lean Startup
+\end{itemize}
+}
+
+\NewMethodology{Projekterfahrung}
+\Description{\MarginText{Projekterfahrung}
+
+\begin{itemize}[label=\isym]
+\item Engineering Manager - Aufbau und Führung eines Entwicklungsteams \details{proj_engineering_manager}
+\item Solution Owner - Process Automation \details{proj_solution_owner}
+\item Lead Engineer - SAP Selective Data Transition Engagement \details{proj_sdte}
+\item Project Lead - Entwicklung einer Roadmap nach S/4 HANA \details{proj_roadmap_s4}
+\item Engineer - Migration Rechnungswesen und Logistik nach S/4 HANA \details{proj_trafo_s4}
+\item Engineer - Transformation SAP BW \details{proj_trafo_bw}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	TECHNOLOGY
+%----------------------------------------------------------------------------------------
+% \newpage
+
+\topic{Technologien}
+
+\NewTechnology{\MarginText{SAP Technologien}}{SAP Technologien}
+\label{tec_sap}
+\Description{
+
+\begin{itemize}[label=\isym]
+\item SAP ABAP
+\item SAP HANA
+\item SAP S/4 HANA, SAP R/3, SAP Netweaver Business Intelligence
+\end{itemize}
+}
+
+\NewTechnology{\MarginText{Künstliche Intelligenz}}{Künstliche Intelligenz}
+\label{tec_ai}
+
+\Description{%
+\begin{itemize}[label=\isym]
+\item \href{https://en.wikipedia.org/wiki/Automated_planning_and_scheduling}{Automatisierte Planung}
+\item \href{https://en.wikipedia.org/wiki/Boolean_satisfiability_problem}{Propositional Satisfiability (SAT)}
+\item \href{https://en.wikipedia.org/wiki/Satisfiability_modulo_theories}{Satisfiability Modulo Theories (SMT)}
+\item \href{https://en.wikipedia.org/wiki/Model_checking}{Bounded Model Checking}
+\item \href{https://en.wikipedia.org/wiki/Artificial_neural_network}{Künstliche Neuronale Netzwerke (KNN)}
+\item \href{https://en.wikipedia.org/wiki/Support_vector_machine}{Support-Vector-Machine (SVM)}
+\end{itemize}
+}
+
+
+\NewTechnology{\MarginText{Data Science}}{Data Science und Data Engineering}
+\label{tec_data_science}
+
+\Description{%
+Python, Haskell und R im Frontend sowie ABAP und HANA im Backend.
+}
+
+\NewTechnology{\MarginText{Infrastruktur}}{Infrastruktur, Continuous Integration und Deployment}
+\label{tec_infrastructure}
+\Description{
+
+\begin{itemize}[label=\isym]
+\item Virtualisierung: Hyper-V, Virtualbox
+\item Versionierung und Continuous Integration: Git, Gitlab, abapGit
+\item Containerisierung: Docker
+\item Dependency Management: Make, Nix
+\end{itemize}
+}
+
+
+\NewTechnology{\MarginText{Compilerbau}}{Compilerbau und Entwicklung von Programmiersprachen}
+\label{tec_language}
+
+\Description{%
+Entwicklung von funktionalen und imperativen Programmiersprachen.
+}
+
+
+\NewTechnology{\MarginText{Programmiersprachen}}{Programmiersprachen}
+\label{tec_languages}
+\Description{
+
+\begin{itemize}[label=\isym]
+\item ABAP
+\item Haskell
+\item Python
+\item R
+\item SQL, SQLScript
+\item JavaScript, TypeScript
+\item Prolog
+\item C
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\newpage
+
+\topic{Projekterfahrung}
+
+\NewProject{Seit 2020/01\MarginText{Engineering Manager}}{Aufbau und Führung eines Innovation-Teams}{SNP}
+\label{proj_engineering_manager}
+
+\Description{%
+Aufbau und Führung eines verteilten 5-köpfigen Entwicklungsteams; die Teamsprache ist Englisch.
+Fokus liegt auf agilen Entwicklungsmethoden, der technologische Schwerpunkte sind SAP Landscape Transformationen, Compilerbau, funktionale Programmierung sowie Verfahren der symbolischen künstlichen Intelligenz.\newline
+\textbf{Tätigkeiten als Engineering Manager}
+\begin{itemize}[label=\isym]
+\item Recruiting und Onboarding neuer Teammitglieder
+\item Ressourcenplanung und -management für das Team
+\item Definition und Kontrolle von Entwicklungs- und Qualitätszielen 
+\item Implementierung agiler Entwicklungsmethoden
+\item Individuelles Coaching und Teamentwicklung
+\item Aufbau der Kommunikations- und Kollaborationskultur
+\item Integration des Teams in das Unternehmen
+\end{itemize}
+}
+
+
+\NewProject{Seit 2020/01\MarginText{Solution Owner}}{Produktentwicklung Process Automation}{SNP}
+\label{proj_solution_owner}
+
+\Description{%
+Design und Umsetzung eines Produkts im Bereich Prozessautomatisierung basierend auf symbolischer KI, funktionaler Programmierung, ABAP und HANA. 
+Das Aufgabenprofil umfasst dabei sowohl die Rolle des Solution Owners als auch die des Lead Engineers.\newline
+\textbf{Tätigkeiten als Solution Owner}
+\begin{itemize}[label=\isym]
+\item Konzeption der Produktvision
+\item Definition der Roadmap
+\item Implementierung von Prototypen
+\item Kommunikation und Abstimmung mit Stakeholdern und Experten
+\item Pflege und Priorisierung des Backlogs
+\item Sprintplanung und Abstimmung mit den Entwicklern während des Sprints
+\item Koordination der Forschung
+\end{itemize}
+\textbf{Technologien}
+\begin{itemize}[label=\isym]
+\item Verfahren und Systeme der symbolischen künstlichen Intelligenz
+\item Verfahren und Systeme des Compilerbaus und der funktionalen Programmierung
+\item SAP ABAP
+\item SAP HANA (Core Data Services, Graph Database, SQLScript)
+\end{itemize}
+}
+
+
+\NewProject{Seit 2019/02\MarginText{Lead Engineer}}{SAP Selective Data Transition Engagement}{SAP}
+\label{proj_sdte}
+
+\Description{%
+Das \sdte\ ist eine Arbeitsgruppe aus SAP, SNP, CBS, 
+Natuvion und Datavard in welchem Konzepte, Technologien und Best-Practices erarbeitet werden um den Top 500 der ERP-Großkunden die Migration auf SAP S/4HANA zu ermöglichen.\newline
+\textbf{Tätigkeiten als Lead Engineer}
+\begin{itemize}[label=\isym]
+\item Leitender Vertreter der SNP im Technology Stream des SDTE Projekts
+\item Koordination mit anderen Streams (Governance, Architecture, Application)
+\item Entwicklung einer graphenbasierten Wissensdatenbank zur Analyse von SAP-Konvertierungsmethoden (XPRA, XCLA, SDM, DDIC-Conversion-Exit)
+     \begin{itemize}[label=\cdot]
+	\item Anforderungen und Konzept
+	\item Prototypenbau und Proof-Of-Concept
+	\item Solution Owner für die Implementierung
+     \end{itemize}
+\end{itemize}	
+\textbf{Technologien}
+\begin{itemize}[label=\isym]
+\item SAP Konvertierungstechniken: XPRA, XCLA, SDM, DDIC-Conversion-Exit
+\item SAP HANA (Graph Database, SQLScript)
+\item SAP ABAP
+\end{itemize}
+}
+
+% Seitenumbruch
+\newpage
+
+\NewProject{2019/01-2019/10\MarginText{Project Lead / Lead Engineer}}{Roadmap nach S/4 HANA}{SNP}
+\label{proj_roadmap_s4}
+
+\Description{%
+Im Rahmen des SNP Excellenzclusters für junge Führungskräfte wurde eine Roadmap nach S/4 HANA entwickelt. 
+Basierend auf dem Design-Thinking-Prozess wurden in enger Zusammenarbeit 
+mit den Stakeholdern diverse funktionale Prototypen erstellt.\newline
+\textbf{Tätigkeiten als Project Lead / Lead Engineer}
+\begin{itemize}[label=\isym]
+\item Design Thinking: Planung und Durchführung von Workshops mit Wissensträgern und Stakeholdern
+\item Design Thinking: Erstellen von Personas
+\item Design Thinking: Entwicklung funktionaler Prototypen
+\end{itemize}
+\textbf{Technologien}
+\begin{itemize}[label=\isym]
+\item SAP ABAP
+\item SAP HANA
+\item Verfahren der symbolischen künstlichen Intelligenz
+\item Verfahren des Compilerbaus und der funktionalen Programmierung
+\end{itemize}
+}
+
+
+\NewProject{Seit 2019/01\MarginText{Engineer}}{Migration nach S/4 HANA}{SNP}
+\label{proj_trafo_s4}
+
+\Description{%
+Der Aufbau und die Integration des Rechnungswesens und der Logistik 
+sind kritische Elemente für eine Migration von R3 nach S/4 HANA.\newline
+\textbf{Tätigkeiten als Engineer}
+\begin{itemize}[label=\isym]
+\item Integration von Migrationslogik in das SNP S/4 Cockpit
+\item System- und Fehleranalyse
+\item Projektsupport 
+\item Ausarbeitung und Durchführung von Schulungen zur S/4 HANA Migration
+\end{itemize}
+\textbf{Technologien}
+\begin{itemize}[label=\isym]
+\item SAP ABAP
+\item SAP HANA
+\item SNP S/4 Cockpit
+\end{itemize}
+}
+
+
+\NewProject{2017/07-2018/07\MarginText{Engineer}}{Konversion SAP BW}{Bosch, SNP}
+\label{proj_trafo_bw}
+
+\Description{%
+Konversion einer aus fünf Systemen bestehenden BW-Landschaft basierend auf dem 
+Regelwerk einer sich gleichzeitig in der Entwicklung befindlichen ERP-Migration.\newline
+\textbf{Tätigkeiten als Engineer}
+\begin{itemize}[label=\isym]
+\item Technische Projektleitung eines 6-köpfigen Teams
+\item Konzept und Umsetzung: Migration DSO InfoProvider
+     \begin{itemize}[label=\cdot]
+	\item Prototypenbau und Proof-Of-Concept
+     \item Implementierung Full-Scope im Projekt
+     \end{itemize}
+\item Softwareentwicklung: Analysegetriebene Migration
+     \begin{itemize}[label=\cdot]
+	\item Analysebasierte Konfiguration der SNP Transformationswerkzeuge
+	\item Sprachen: ABAP, R Language, Haskell
+     \end{itemize}
+\end{itemize}
+\textbf{Technologien}
+\begin{itemize}[label=\isym]
+\item SAP BW
+\item SNP TC
+\item R Language
+\item Haskell
+\end{itemize}
+}
 
 \end{cv}
 

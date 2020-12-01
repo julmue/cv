@@ -17,7 +17,7 @@
 ]{scrlttr2}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
+\usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage{graphicx}
 
@@ -36,17 +36,17 @@
 
 
 \addtokomafont{backaddress}{\normalfont}
-\addtokomafont{fromname}{\color{blaze}}
-\addtokomafont{subject}{\color{blaze}}
+\addtokomafont{fromname}{\color{magma}}
+\addtokomafont{subject}{\color{magma}}
 
 \LoadLetterOption{DIN}
 \setkomavar{fromname}{\spacedallcaps{Julian Müller}}
-\setkomavar{fromaddress}{Josef-Gottwald-Str.1\\77654 Offenburg}
-\setkomavar{fromphone}{+49 0000 0\,00\,00\,00}
+\setkomavar{fromaddress}{Schloßstraße 34\\14059 Berlin}
+\setkomavar{fromphone}{+49 176 20562999}
 \setkomavar{fromemail}{jul.mue@hotmail.de}
 \setkomavar{backaddressseparator}{\enspace\textperiodcentered\enspace}
 \setkomavar{signature}{\includegraphics[height=2.7cm,width=5cm]{sig}\\\vspace{-4em}{(Julian Müller)}}
-\setkomavar{place}{Offenburg}
+\setkomavar{place}{Berlin}
 \setkomavar{date}{\today}
 \setkomavar{enclseparator}{: }
 
@@ -62,15 +62,29 @@
 }
 
 \begin{document}
-  \begin{letter}{Empfängername\\Empfängerstraße\\00000 EmpfängerOrt}
-    \setkomavar{subject}{\spacedallcaps{Betreff}}
-    \opening{Sehr geehrte Damen und Herren,}
+  \begin{letter}{SAP SE - Berlin\\Rosenthaler Str. 30, 10178 Berlin}%{Empfängername\\Empfängerstraße\\00000 EmpfängerOrt}
+    \setkomavar{subject}{\spacedallcaps{Engineering Manager (f/m/d) Hyperautomation}}
+    \opening{Dear Sir or Madam,}
 
-    \blindtext
+%    \blindtext
 
-    \closing{Mit freundlichen Grüßen,}
+When I first saw your job advertisement for this position it felt like the perfect match! Let me explain why:
+%In my job I enjoy working with SAP technology every day and also collaborate closely with your colleagues from SAP Data Management and Landscape Transformation in the Selective Data Transition Engagement. 
+The first time I was introduced to Robot Process Automation was on last year's TechED in Barcelona - I was instantly amazed by this technology. Hyperautomation is the next level and I would love to contribute to its development.
 
-    \ps PS: Dies ist ein Postskriptum.
+You're looking for a leader with a strong technical background who can build self-organizing and high-performing teams focusing on development in many dimensions. 
+As an Engineering Manager, Solution Owner and Lead Engineer in a startup environment within Schneider-Neureither and Partner SE (SNP) it seems like I'm an excellent fit.
+
+I've built a team of 5 developers that is specialized in automating complex SAP landscape transformations. We use results from Artificial Intelligence and Programming Language Design to achieve this goal. 
+Enabling a human-centered design and development process with a strong focus on quality and value is my first priority.
+
+I enjoy collaboration and communication and I love to see ambitious vision turn into reality.
+I'm ready for the best run and looking forward talking to you personally.
+
+
+    \closing{Sincerely yours,}
+
+%    \ps PS: Dies ist ein Postskriptum.
 
   \end{letter}
 \end{document}

@@ -21,7 +21,7 @@
 % colorscheme
 \usepackage{../Colorscheme/summer}
 
-\newcommand{\headercolor}{blaze}
+\newcommand{\headercolor}{magma}
 \newcommand{\linkcolor}{california}
 \newcommand{\lightTextColor}{ash}
 
@@ -84,10 +84,11 @@
     \vspace{0.5em}%
 }
 
-\newcommand{\NewTechnology}[1]{%
+\newcommand{\NewTechnology}[2]{%
     \phantomsection %hyperref needs this for labels
     \noindent\hangindent=2em\hangafter=0%
-    \textbf{\textit{#1}}\hspace{0.5em}
+    {#1}%for the margin text
+    \textbf{\textit{#2}}\hspace{0.5em}
     \vspace{0.5em}%
 }
 

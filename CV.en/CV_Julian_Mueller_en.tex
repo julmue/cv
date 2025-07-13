@@ -11,7 +11,11 @@
 
 \newcommand{\snp}{SNP SE} % {\href{www.snpgroup.com}{SNP SE}}
 \newcommand{\herrenknecht}{Herrenknecht AG} % {\href{https://www.herrenknecht.com/}{Herrenknecht AG}}
-\newcommand{\sdte}{Selective Data Transition Engagement}% \href{https://news.sap.com/germany/2019/05/arbeitsgruppe-migration-s4hana/}{Selective Data Transition Engagement}}
+\newcommand{\sdte}{\href{https://news.sap.com/germany/2019/05/arbeitsgruppe-migration-s4hana/}{\textbf{Selective Data Transition Engagement}}}
+\newcommand{\compose}{\href{https://www.natuvion.com/products/data-conversion-suite/dcs-compose}{\textbf{Natuvion DCS Compose}}}
+\newcommand{\migrate}{\href{https://www.natuvion.com/products/data-conversion-suite/dcs-migrate}{\textbf{Natuvion DCS Migrate}}}
+\newcommand{\transformation}{\href{https://www.natuvion.com/services/sap-s4hana-transformation/}{\textbf{Transformation to SAP S/4HANA}}}
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -27,10 +31,12 @@
     % name and address
     \node[align=center] (name) at ([yshift=-19cm]current page.north) %
          {\Huge \textcolor{magma}{\spacedallcaps{Julian Müller}}};
-     \node[align=center] at ([yshift=-21.2cm]current page.north) %
-         {\textcolor{magma}{\spacedallcaps{Logik (M.A.)}}};
+     \node[align=center] at ([yshift=-22.2cm]current page.north) %
+         {\textcolor{magma}{\spacedallcaps{Architect}}};
+    \node[align=center] at ([yshift=-21.2cm]current page.north) %
+         {\textcolor{magma}{\spacedallcaps{Solution Owner}}};
     \node[align=center] at ([yshift=-20.2cm]current page.north) %
-         {\textcolor{magma}{\spacedallcaps{Maschinenbau (B.E.)}}};
+         {\textcolor{magma}{\spacedallcaps{Engineering Leader}}};
     \node[align=left] at ([xshift=0.3cm,yshift=-25cm]current page.north) % 
          {\color{textgray}
 			\begin{tabular}{lr}
@@ -50,10 +56,75 @@
          };
 \end{tikzpicture}
 
-% Your name
+
+
 \newpage
 
+%----------------------------------------------------------------------------------------
+%	Executive Summary
+%----------------------------------------------------------------------------------------
+
+\topic{\centerline{\Huge One Page Summary}}
+
+% \NewEntry{
+%      % \MarginText{Engineering Manager / Solution Owner \compose\ \& AI}%
+%      }{Engineering Manager * Solution Owner * Architect}{}
+
+\MarginText{Language\\ Data\\ Automation\\ AI}%
+% \Description{%
+\noindent \textbf{Engineering leader}, \textbf{solution owner} and \textbf{architect} with years of experience in \textbf{SAP data transformation}, 
+\textbf{programming language design}, and \textbf{AI-driven automation}. Proven track record in building high-performing teams, 
+delivering strategic enterprise products, and driving innovation in the SAP data transformation ecosystem. 
+
+\vspace{0.5em}
+\noindent Bridges deep technical expertise in language design, data transformation, and AI with strong leadership and product ownership. 
+Led teams in English and German.
+
+% \begin{center}
+% Language · Data · Automation · AI
+% \end{center}
+
+\vspace{2.0em}
+\topic{Current Role}
+
+\MarginText{Engineering Lead\\Solution Owner\\Architect}%
+\noindent Acting as \textbf{Engineering Leader}, \textbf{Solution Owner}, and \textbf{Architect} of \compose\ the programming language for \migrate\ and the AI product line leading an 8 FTE engineering team at Natuvion GmbH.
+
+\vspace{2.0em}
+\topic{Recent Achievements}
+
+\begin{itemize}[label=\isym]
+    \item \MarginText{Built 8 FTE Engineering Team}\textbf{Built and led an engineering team (8 FTEs)} and temporarily managed the Cloud Engineering team; 
+          drove Compose’s integration into the company’s cloud infrastructure.
+    \item \MarginText{Led Programming Language Development}\textbf{Initiated and led the design of \compose}, the programming language for \migrate. 
+          Now a strategic pillar in Natuvion’s Cloud Platform, enabling full lifecycle management, Git-native versioning, and modular transformation delivery.
+    \item \MarginText{Led AI Product Development}\textbf{Founded and led Natuvion’s AI product line}, 
+          architecting solutions including Compose AI Neuromap, Compose AI Agency now entering beta.
+    \item \MarginText{Developed Data Transformation Engine}\textbf{Developed Natuvion’s \transformation\ backend (Finance \& Logitics)}, used in many large-scale projects across energy, 
+          banking, manufacturing, and public sector.
+    \item \MarginText{Led SAP SDTE Technology Stream}\textbf{Acted as solution owner and strategic technology lead}, shaping roadmap, engineering standards, and presales demos. 
+          Represented Natuvion in SAP’s \sdte.
+\end{itemize}
+
+\vspace{2.0em}
+\topic{Technologies} 
+
+\begin{itemize}[label=\isym]
+    \item \MarginText{Languages}Haskell, ABAP, Python, SQL, R, TypeScript, Java, JavaScript
+    \item \MarginText{AI}Ollama, Qdrant, LangChain, LLMs, Embedding Models, MCP, A2A
+    \item \MarginText{Data}SAP HANA, Postgres, Redis
+    \item \MarginText{Automation}Temporal
+    \item \MarginText{CI \& CD}git, github, gitlab
+    \item \MarginText{Infrastructure}Docker 
+\end{itemize}
+
+% }
+
+\newpage
 \thispagestyle{empty}
+
+
+
 
 %\begin{cv}
 \begin{cv}{\spacedallcaps{Julian Müller}}\vspace{1.5em} 
@@ -64,28 +135,42 @@
 
 \topic{Work Experience}
 
+\NewEntry{since 08/2021%
+     \MarginText{Engineering Leader \& Solution Owner\\ \compose\ \& AI}%
+     }{Engineering Leader}{Natuvion GmbH}
+
+\Description{%
+\textbf{Engineering manager}, \textbf{solution owner}, \textbf{principal architect} for \compose, \textbf{AI-based applications} and \transformation\ tooling.
+Built and led \textbf{two engineering teams} (Compose \& AI, 8 FTEs) and coordinated Compose's integration into the Natuvion Cloud.
+
+\begin{itemize}[label=\isym]
+    \item Designed and led the development of \compose, a bidirectional programming language for \migrate, enabling version control, transformation modularization, and Git-based QA.
+    \item Developed Natuvion’s \transformation\ 's backend for Finance \& Logistics, successfully used in many customer projects (energy, banking, manufacturing, public sector).
+    \item Founded and led the \textbf{Natuvions AI product line} (Compose AI Neuromap, Compose AI Agency), built with LangChain, Qdrant, LLaMA 3.1 and Ollama – now entering beta.
+    \item Temporarily managed the \textbf{Cloud Engineering team} (8 FTEs) and drove Compose’s integration into Natuvion Cloud via cross-team coordination and story management.
+    \item Represented Natuvion in SAP’s \sdte as part of the Technology Stream.
+\end{itemize}
+}
+
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
-\NewEntry{Seit 2020/01%
-     \MarginText{Engineering Manager / Solution Owner R\&D}%
-     }{Engineering Manager / Solution Owner R\&D}{\snp}
+\NewEntry{2020/01 - 2021/08%
+     \MarginText{Engineering Leader}%
+     }{Engineering Leader}{\snp}
 
 \Description{%
 % Design und Umsetzung eines Produkts zur Prozessautomatisierung basierend auf symbolischer KI, 
 % funktionaler Programmierung, ABAP und HANA.
 % Aufbau und Führung eines verteilten High-Preformance Teams zur Umsetzung des Produkts.
+\textbf{Engineering manager}, \textbf{solution owner}, \textbf{principal architect}. 
 Design and implementation of a product for process automation based on symbolic AI,
-functional programming, ABAP and HANA.
-Building and managing a distributed high-performance team to implement the product.
+functional programming, ABAP and HANA. Building and managing a distributed high-performance team to implement the product.
 \begin{itemize}[label=\isym]
-\item Engineering Manager: Building and managing a 5-person development team % \details{proj_engineering_manager}
-\item Solution Owner: Agile product design and development % \details{proj_sdte}
-\item Lead Engineer: System design, architecture, implementation of prototypes
-\end{itemize}
-Additional:
-\begin{itemize}[label=\isym]
-\item Lead Engineer for SNP in SAP's \sdte\
+     \item Engineering Manager: Building and managing a 5-person development team % \details{proj_engineering_manager}
+     \item Solution Owner: Agile product design and development % \details{proj_sdte}
+     \item Lead Engineer: System design, architecture, implementation of prototypes
+     \item Lead Engineer for SNP in SAP's \sdte\
 \end{itemize}
 }
 
@@ -138,9 +223,126 @@ Design, programming and commissioning of a 3D laser system for wear measurement 
 
 \NewEntry{01/2009-09/2009\MarginText{Math Tutor}}{Math Tutor}{RFH Köln}
 
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	METHODOLOGY
+%----------------------------------------------------------------------------------------
+\topic{Methodology}
+
+\NewMethodology{Team Development and Leadership}
+\Description{\MarginText{Team Development and Leadership}
+
+\begin{itemize}[label=\isym]
+\item Building and managing distributed development teams
+\item Coaching communication and feedback culture
+\item Coaching methods of software design and software quality
+\item Introduction and improvement of agile development methodology
+\item Coordination with internal and external stakeholders
+\item Resource planning and management
+\end{itemize}
+}
+
+% \NewMethodology{Project Experience}
+% \Description{\MarginText{Project Experience}
+
+% \begin{itemize}[label=\isym]
+% \item Engineering Manager - Building and managing mutliple development teams % \details{proj_engineering_manager}
+% \item Solution Owner - Process automation %\details{proj_solution_owner}
+% \item Lead Engineer - SAP Selective Data Transition Engagement %\details{proj_sdte}
+% \item Project Lead - Development of a roadmap to S/4 HANA %\details{proj_roadmap_s4}
+% \item Engineer - Finance and logistics migration to S/4 HANA %\details{proj_trafo_s4}
+% \item Engineer - Transformation SAP BW %\details{proj_trafo_bw}
+% \end{itemize}
+% }
+
+\NewMethodology{Agile Development Methodology}
+\Description{\MarginText{Agile Development Methodology}
+
+\begin{itemize}[label=\isym]
+\item Scrum and Kanban
+\item Design Thinking
+\item Lean Management and Lean Startup
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	TECHNOLOGY
+%----------------------------------------------------------------------------------------
+% \newpage
+
+\topic{Technology}
+
+\NewTechnology{\MarginText{Artificial Intelligence}}{Artificial Intelligence}
+\label{tec_ai}
+
+\Description{%
+\begin{itemize}[label=\isym]
+\item \textbf{Subsymbolic AI:} Large Language Models (LLMs), Embedding Models, Vector Databases, Retrieval-Augmented Generation (RAG), Agent Architectures
+\item \textbf{Symbolic AI:} SAT/SMT solving, Constraint Satisfaction Problems (CSP), logic-based reasoning
+\item \textbf{Automated Planning and Scheduling:} Classical and heuristic planning techniques, multi-agent coordination
+\end{itemize}
+}
+
+\NewTechnology{\MarginText{SAP Technologies}}{SAP Technologies}
+\label{tec_sap}
+
+\Description{
+\noindent ABAP, HANA, S/4HANA, R/3, BW
+}
+
+\NewTechnology{\MarginText{Programming Languages}}{Programming Languages}
+\label{tec_languages}
+
+\Description{
+Haskell, ABAP, Python, SQL, R, TypeScript, Java, JavaScript
+}
+
+\NewTechnology{\MarginText{Data Science}}{Data Science und Data Engineering}
+\label{tec_data_science}
+
+\Description{%
+Python, Haskell, R, ABAP, HANA, Postgres.
+}
+
+\NewTechnology{\MarginText{Infrastructure}}{Infrastructure, Continuous Integration and Deployment}
+\label{tec_infrastructure}
+\Description{
+
+\begin{itemize}[label=\isym]
+\item Containerization: Docker
+\item Versioning and continuous integration: Git, Gitlab, abapGit
+\item Virtualization: Hyper-V, Virtualbox
+\item Dependency Management: Make, Nix
+\end{itemize}
+}
+
+
+% \NewTechnology{\MarginText{Programming Language Design}}{Compilers and Programming Language Design}
+% \label{tec_language}
+
+% \Description{%
+% Development of functional and imperative programming languages.
+% }
+
+
+% \begin{itemize}[label=\isym]
+% \item ABAP
+% \item Haskell
+% \item Python
+% \item R
+% \item SQL, SQLScript
+% \item JavaScript, TypeScript
+% \item Prolog
+% \item C
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\topic{Languages}
+
+\Description{German (Native speaker), English (Fluent), Spanish (Basics) }
 
 \topic{Education}
 
@@ -162,287 +364,160 @@ Thesis (Grade 1.0): \textit{Verschlei\ss erkennung bei Werkzeugen im Tunnelbau}%
 
 \NewEntry{2004-2007\MarginText{Event Organizer}}{Event Organizer}{Angell Institut Freiburg}
 
-%-------------------------------------------------------------------------------
-\topic{Languages}
-
-\Description{\MarginText{Native speaker}German}
-\Description{\MarginText{Fluent}English}
-\Description{\MarginText{Basics}Spanish}
-
-\newpage
-
-%----------------------------------------------------------------------------------------
-%	METHODOLOGY
-%----------------------------------------------------------------------------------------
-\topic{Methodology}
-
-\NewMethodology{Team Development and Leadership}
-\Description{\MarginText{Team Development and Leadership}
-
-\begin{itemize}[label=\isym]
-\item Building and managing distributed development teams
-\item Coaching communication and feedback culture
-\item Coaching methods of software design and software quality
-\item Introduction and improvement of agile development methodology
-\item Coordination with internal and external stakeholders
-\item Resource planning and management
-\end{itemize}
-}
-
-
-\NewMethodology{Agile Development Methodology}
-\Description{\MarginText{Agile Development Methodology}
-
-\begin{itemize}[label=\isym]
-\item Scrum and Kanban
-\item Design Thinking
-\item Lean Management and Lean Startup
-\end{itemize}
-}
-
-\NewMethodology{Project Experience}
-\Description{\MarginText{Project Experience}
-
-\begin{itemize}[label=\isym]
-\item Engineering Manager - Building and managing a development team % \details{proj_engineering_manager}
-\item Solution Owner - Process automation %\details{proj_solution_owner}
-\item Lead Engineer - SAP Selective Data Transition Engagement %\details{proj_sdte}
-\item Project Lead - Development of a roadmap to S/4 HANA %\details{proj_roadmap_s4}
-\item Engineer - Finance and logistics migration to S/4 HANA %\details{proj_trafo_s4}
-\item Engineer - Transformation SAP BW %\details{proj_trafo_bw}
-\end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
-%	TECHNOLOGY
-%----------------------------------------------------------------------------------------
-% \newpage
-
-\topic{Technology}
-
-\NewTechnology{\MarginText{SAP Technologies}}{SAP Technologies}
-\label{tec_sap}
-\Description{
-
-\begin{itemize}[label=\isym]
-\item SAP ABAP
-\item SAP HANA
-\item SAP S/4 HANA, SAP R/3, SAP Netweaver Business Intelligence
-\end{itemize}
-}
-
-\NewTechnology{\MarginText{Artificial Intelligence}}{Artificial Intelligence}
-\label{tec_ai}
-
-\Description{%
-\begin{itemize}[label=\isym]
-\item Automated Planning and Scheduling %\href{https://en.wikipedia.org/wiki/Automated_planning_and_scheduling}{Automated Planning and Scheduling}
-\item Propositional Satisfiability (SAT) %\href{https://en.wikipedia.org/wiki/Boolean_satisfiability_problem}{Propositional Satisfiability (SAT)}
-\item Satisfiability Modulo Theories (SMT) %\href{https://en.wikipedia.org/wiki/Satisfiability_modulo_theories}{Satisfiability Modulo Theories (SMT)}
-\item Bounded Model Checking %\href{https://en.wikipedia.org/wiki/Model_checking}{Bounded Model Checking}
-\item Artificial Neural Network (ANN) %\href{https://en.wikipedia.org/wiki/Artificial_neural_network}{Artificial Neural Network (ANN)}
-\item Support-Vector-Machine (SVM) %\href{https://en.wikipedia.org/wiki/Support_vector_machine}{Support-Vector-Machine (SVM)}
-\end{itemize}
-}
-
-
-\NewTechnology{\MarginText{Data Science}}{Data Science und Data Engineering}
-\label{tec_data_science}
-
-\Description{%
-Python, Haskell and R in the frontend and ABAP and HANA in the backend.
-}
-
-\NewTechnology{\MarginText{Infrastructure}}{Infrastructure, Continuous Integration and Deployment}
-\label{tec_infrastructure}
-\Description{
-
-\begin{itemize}[label=\isym]
-\item Virtualization: Hyper-V, Virtualbox
-\item Versioning and continuous integration: Git, Gitlab, abapGit
-\item Containerization: Docker
-\item Dependency Management: Make, Nix
-\end{itemize}
-}
-
-
-\NewTechnology{\MarginText{Language Design}}{Compilers and Programming Language Design}
-\label{tec_language}
-
-\Description{%
-Development of functional and imperative programming languages.
-}
-
-
-\NewTechnology{\MarginText{Programming Languages}}{Programming Languages}
-\label{tec_languages}
-\Description{
-
-\begin{itemize}[label=\isym]
-\item ABAP
-\item Haskell
-\item Python
-\item R
-\item SQL, SQLScript
-\item JavaScript, TypeScript
-\item Prolog
-\item C
-\end{itemize}
-}
 
 
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
-\newpage
+% \newpage
 
-\topic{Project Experience}
+% \topic{Project Experience}
 
-\NewProject{Since 2020/01\MarginText{Engineering Manager}}{Building and Managing an Innovation Team}{SNP}
-\label{proj_engineering_manager}
+% \NewProject{Since 2020/01\MarginText{Engineering Manager}}{Building and Managing an Innovation Team}{SNP}
+% \label{proj_engineering_manager}
 
-\Description{%
-Building and managing a distributed 5-person development team; the team language is English.
-The focus is on agile development methodology, the technological focus is on SAP landscape transformations, 
-compiler construction, functional programming and methods of symbolic artificial intelligence.\newline
-\textbf{Responsibilities as Engineering Manager}
-\begin{itemize}[label=\isym]
-\item Recruiting and onboarding new team members
-\item Resource planning and management for the team
-\item Definition and control of development and quality goals
-\item Implementation of agile development methodology
-\item Individual coaching and team development
-\item Development of the communication and collaboration culture
-\item Integration of the team into the company
-\end{itemize}
-}
-
-
-\NewProject{Seit 2020/01\MarginText{Solution Owner}}{Process Automation}{SNP}
-\label{proj_solution_owner}
-
-\Description{%
-Design and implementation of a product in the field of process automation based on symbolic AI, functional programming, ABAP and HANA.
-The task profile includes both the role of the solution owner and the lead engineer.\newline
-\textbf{Responsibilities as Solution Owner and Lead Engineer}
-\begin{itemize}[label=\isym]
-\item Product vision
-\item Roadmap definition
-\item Implementing prototypes
-\item Communication and coordination with stakeholders and experts
-\item Maintaining and priorizing the product backlog
-\item Sprint planning and coordination with the developers during the sprint
-\item Research coordination
-\end{itemize}
-\textbf{Technologies}
-\begin{itemize}[label=\isym]
-\item Symbolic artificial intelligence
-\item Compiler building and functional programming languages
-\item SAP ABAP
-\item SAP HANA (Core Data Services, Graph Database, SQLScript)
-\end{itemize}
-}
+% \Description{%
+% Building and managing a distributed 5-person development team; the team language is English.
+% The focus is on agile development methodology, the technological focus is on SAP landscape transformations, 
+% compiler construction, functional programming and methods of symbolic artificial intelligence.\newline
+% \textbf{Responsibilities as Engineering Manager}
+% \begin{itemize}[label=\isym]
+% \item Recruiting and onboarding new team members
+% \item Resource planning and management for the team
+% \item Definition and control of development and quality goals
+% \item Implementation of agile development methodology
+% \item Individual coaching and team development
+% \item Development of the communication and collaboration culture
+% \item Integration of the team into the company
+% \end{itemize}
+% }
 
 
-\NewProject{Seit 2019/02\MarginText{Lead Engineer}}{SAP Selective Data Transition Engagement}{SAP}
-\label{proj_sdte}
+% \NewProject{Seit 2020/01\MarginText{Solution Owner}}{Process Automation}{SNP}
+% \label{proj_solution_owner}
 
-\Description{%
-The \sdte \ is a working group of SAP, SNP, CBS, Natuvion and Datavard in which concepts, technologies and best practices are developed 
-to enable the top 500 of ERP customers to migrate to SAP S/4HANA.
-\newline
-\textbf{Responsibilities as SNP's Lead Engineer (Technology)}
-\begin{itemize}[label=\isym]
-\item Coordination with other streams (Governance, Architecture, Application)
-\item Development of a graph-based knowledge database for the analysis of SAP conversion methods (XPRA, XCLA, SDM, DDIC-Conversion-Exit)
-     \begin{itemize}[label=\cdot]
-	\item Requirements and concept
-	\item Implementing prototypes and proof-of-concepts
-	\item Solution owner for the knowledge base
-     \end{itemize}
-\end{itemize}	
-\textbf{Technologies}
-\begin{itemize}[label=\isym]
-\item SAP conversion methods: XPRA, XCLA, SDM, DDIC-Conversion-Exit
-\item SAP HANA (Graph Database, SQLScript)
-\item SAP ABAP
-\end{itemize}
-}
-
-% Seitenumbruch
-\newpage
-
-\NewProject{2019/01-2019/10\MarginText{Project Lead / Lead Engineer}}{Roadmap to S/4 HANA}{SNP}
-\label{proj_roadmap_s4}
-
-\Description{%
-As part of the SNP excellence cluster for young managers, a roadmap for migrations to S/4 HANA was developed.
-Based on the design thinking process, we worked closely together with our stakeholders to create various functional prototypes.\newline
-\textbf{Responsibilities as Project Lead / Lead Engineer}
-\begin{itemize}[label=\isym]
-\item Planing and hosting workshops with knowledge owners and stakeholders
-\item Creation of design thinking personas
-\item Development of functional prototypes
-\end{itemize}
-\textbf{Technologies}
-\begin{itemize}[label=\isym]
-\item SAP ABAP
-\item SAP HANA
-\item Symbolic artificial intelligence
-\item Compiler construction and functional programming
-\end{itemize}
-}
+% \Description{%
+% Design and implementation of a product in the field of process automation based on symbolic AI, functional programming, ABAP and HANA.
+% The task profile includes both the role of the solution owner and the lead engineer.\newline
+% \textbf{Responsibilities as Solution Owner and Lead Engineer}
+% \begin{itemize}[label=\isym]
+% \item Product vision
+% \item Roadmap definition
+% \item Implementing prototypes
+% \item Communication and coordination with stakeholders and experts
+% \item Maintaining and priorizing the product backlog
+% \item Sprint planning and coordination with the developers during the sprint
+% \item Research coordination
+% \end{itemize}
+% \textbf{Technologies}
+% \begin{itemize}[label=\isym]
+% \item Symbolic artificial intelligence
+% \item Compiler building and functional programming languages
+% \item SAP ABAP
+% \item SAP HANA (Core Data Services, Graph Database, SQLScript)
+% \end{itemize}
+% }
 
 
-\NewProject{Seit 2019/01\MarginText{Engineer}}{Migration to S/4 HANA}{SNP}
-\label{proj_trafo_s4}
+% \NewProject{Seit 2019/02\MarginText{Lead Engineer}}{SAP Selective Data Transition Engagement}{SAP}
+% \label{proj_sdte}
 
-\Description{%
-Integrating finance and logistics are critical elements for a migration to S/4 HANA.\newline
-\textbf{Responsibilities as Engineer}
-\begin{itemize}[label=\isym]
-\item Integration of migration logic in the SNP S/4 cockpit
-\item Trouble shooting and error analysis
-\item Project support 
-\item Designing and holding training courses about S/4 HANA migration
-\end{itemize}
-\textbf{Technologies}
-\begin{itemize}[label=\isym]
-\item SAP ABAP
-\item SAP HANA
-% \item SNP S/4 Cockpit
-\end{itemize}
-}
+% \Description{%
+% The \sdte \ is a working group of SAP, SNP, CBS, Natuvion and Datavard in which concepts, technologies and best practices are developed 
+% to enable the top 500 of ERP customers to migrate to SAP S/4HANA.
+% \newline
+% \textbf{Responsibilities as SNP's Lead Engineer (Technology)}
+% \begin{itemize}[label=\isym]
+% \item Coordination with other streams (Governance, Architecture, Application)
+% \item Development of a graph-based knowledge database for the analysis of SAP conversion methods (XPRA, XCLA, SDM, DDIC-Conversion-Exit)
+%      \begin{itemize}[label=\cdot]
+% 	\item Requirements and concept
+% 	\item Implementing prototypes and proof-of-concepts
+% 	\item Solution owner for the knowledge base
+%      \end{itemize}
+% \end{itemize}	
+% \textbf{Technologies}
+% \begin{itemize}[label=\isym]
+% \item SAP conversion methods: XPRA, XCLA, SDM, DDIC-Conversion-Exit
+% \item SAP HANA (Graph Database, SQLScript)
+% \item SAP ABAP
+% \end{itemize}
+% }
+
+% % Seitenumbruch
+% \newpage
+
+% \NewProject{2019/01-2019/10\MarginText{Project Lead / Lead Engineer}}{Roadmap to S/4 HANA}{SNP}
+% \label{proj_roadmap_s4}
+
+% \Description{%
+% As part of the SNP excellence cluster for young managers, a roadmap for migrations to S/4 HANA was developed.
+% Based on the design thinking process, we worked closely together with our stakeholders to create various functional prototypes.\newline
+% \textbf{Responsibilities as Project Lead / Lead Engineer}
+% \begin{itemize}[label=\isym]
+% \item Planing and hosting workshops with knowledge owners and stakeholders
+% \item Creation of design thinking personas
+% \item Development of functional prototypes
+% \end{itemize}
+% \textbf{Technologies}
+% \begin{itemize}[label=\isym]
+% \item SAP ABAP
+% \item SAP HANA
+% \item Symbolic artificial intelligence
+% \item Compiler construction and functional programming
+% \end{itemize}
+% }
 
 
-\NewProject{2017/07-2018/07\MarginText{Engineer}}{Konversion SAP BW}{Bosch, SNP}
-% \label{proj_trafo_bw}
+% \NewProject{Seit 2019/01\MarginText{Engineer}}{Migration to S/4 HANA}{SNP}
+% \label{proj_trafo_s4}
 
-\Description{%
-Conversion of a BW landscape consisting of five systems based on 
-the set of transformation rules of an ERP migration in simultaneous development.\newline
-\textbf{Responsibilities as Engineer}
-\begin{itemize}[label=\isym]
-\item Technical project management of a 6-person developer team
-\item Concept and implementation: Migration DSO InfoProvider
-     \begin{itemize}[label=\cdot]
-	\item Prototype construction and proof-of-concept
-     \item Implementation of full scope in the project
-     \end{itemize}
-\item Software development: analysis-driven migration
-     \begin{itemize}[label=\cdot]
-	\item Analysis-based configuration of the SNP transformation tools
-     \end{itemize}
-\end{itemize}
-\textbf{Technologies}
-\begin{itemize}[label=\isym]
-\item SAP BW
-\item SNP TC
-\item ABAP
-\item R
-\item Haskell
-\end{itemize}
-}
+% \Description{%
+% Integrating finance and logistics are critical elements for a migration to S/4 HANA.\newline
+% \textbf{Responsibilities as Engineer}
+% \begin{itemize}[label=\isym]
+% \item Integration of migration logic in the SNP S/4 cockpit
+% \item Trouble shooting and error analysis
+% \item Project support 
+% \item Designing and holding training courses about S/4 HANA migration
+% \end{itemize}
+% \textbf{Technologies}
+% \begin{itemize}[label=\isym]
+% \item SAP ABAP
+% \item SAP HANA
+% % \item SNP S/4 Cockpit
+% \end{itemize}
+% }
+
+
+% \NewProject{2017/07-2018/07\MarginText{Engineer}}{Konversion SAP BW}{Bosch, SNP}
+% % \label{proj_trafo_bw}
+
+% \Description{%
+% Conversion of a BW landscape consisting of five systems based on 
+% the set of transformation rules of an ERP migration in simultaneous development.\newline
+% \textbf{Responsibilities as Engineer}
+% \begin{itemize}[label=\isym]
+% \item Technical project management of a 6-person developer team
+% \item Concept and implementation: Migration DSO InfoProvider
+%      \begin{itemize}[label=\cdot]
+% 	\item Prototype construction and proof-of-concept
+%      \item Implementation of full scope in the project
+%      \end{itemize}
+% \item Software development: analysis-driven migration
+%      \begin{itemize}[label=\cdot]
+% 	\item Analysis-based configuration of the SNP transformation tools
+%      \end{itemize}
+% \end{itemize}
+% \textbf{Technologies}
+% \begin{itemize}[label=\isym]
+% \item SAP BW
+% \item SNP TC
+% \item ABAP
+% \item R
+% \item Haskell
+% \end{itemize}
+% }
 
 \end{cv}
 
